@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+body {
+    animation: colorchange 2s infinite;
+}
+
+@keyframes colorchange {
+  0% {background: repeating-linear-gradient(#f1e6b2, #b1c9e8, #e9c4c7);}
+  33% {background: repeating-linear-gradient(#b1c9e8, #e9c4c7, #f1e6b2);}
+  66% {background: repeating-linear-gradient(#e9c4c7, #f1e6b2, #b1c9e8);}
+  100% {background: repeating-linear-gradient(#f1e6b2, #b1c9e8, #e9c4c7);}
+}
+
+</style>
+</head>
+
+<body>
+  <h1>변수</h1>
+
+  <script>
+
+    var 세로 = ['잉어', '옥수수','김재현'];
+  
+    var 가로 =['이용운' ,'잉어' ,'김재현','dldyddns'];
+  </script>
+<!--가로-->
+<table>
+    <script>
+  
+  var n = 0;
+while (n < 가로.length) {
+  document.write('<td>'+가로[n]+'</td>');
+  n = n + 1;
+}
+
+</script>
+</table>
+
+
+
+<!--세로-->
+  <ul>
+      <script>
+      var i = 0;
+      while (i < 세로.length) {
+        document.write('<li>' + 세로[i] + '</li>');
+        i = i + 1;  }
+      </script>
+      </ul>
+
+
+
+
+
+
+
+</body>
+
+</html>
